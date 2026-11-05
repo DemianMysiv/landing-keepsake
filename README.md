@@ -4,7 +4,7 @@ Responsive one-page landing based on the Keepsake Figma design (Desktop 1280, Ta
 
 ## Demo
 
-**TODO:** Add the published GitHub Pages URL here after deployment. The repository/demo address was not provided, so no link has been invented.
+[Live Demo — Keepsake](https://demianmysiv.github.io/landing-keepsake/)
 
 ## Technologies and decisions
 
