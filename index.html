@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keepsake - Digital & Branding Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Open+Sans:wght@300;400;700&amp;family=Oswald:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#top" class="logo" aria-label="Keepsake Home"><span>K</span>eepsake</a>
+
+            <div class="nav-wrapper desktop-navigation">
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a href="#top" class="active" aria-current="page">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#works">OUR WORKS</a></li>
+                        <li><a href="#journal">JOURNAL</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <button class="btn-favourites" type="button" aria-label="Favourites">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                </button>
+            </div>
+
+            <!-- HTML Popover API: accessible native button, without JavaScript. -->
+            <button type="button" class="burger-btn" popovertarget="mobile-drawer"
+                    popovertargetaction="toggle" aria-controls="mobile-drawer" aria-label="Toggle menu">
+                <span class="burger-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div id="mobile-drawer" class="mobile-drawer" popover="auto">
+            <nav class="mobile-nav" aria-label="Mobile navigation">
+                <ul>
+                    <li><a href="#top">HOME</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#works">OUR WORKS</a></li>
+                    <li><a href="#journal">JOURNAL</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-actions">
+                <a href="#contact" class="btn btn-primary btn-full-mobile">CONTACT US</a>
+                <button type="button" class="btn btn-secondary btn-full-mobile">FAVOURITES</button>
+            </div>
+            <div class="mobile-menu-footer">
+                <p class="say-hello">SAY HELLO</p>
+                <a href="mailto:hello@keepsake.studio">hello@keepsake.studio</a>
+                <a href="tel:+442079460000">+44 20 7946 0000</a>
+                <div class="socials">
+                    <a href="#contact" class="social-link social-rss" aria-label="RSS" rel="noopener noreferrer">rss</a>
+                    <a href="#contact" class="social-link social-facebook" aria-label="Facebook" rel="noopener noreferrer">f</a>
+                    <a href="#contact" class="social-link social-twitter" aria-label="X / Twitter" rel="noopener noreferrer">tw</a>
+                    <a href="#contact" class="social-link social-dribbble" aria-label="Dribbble" rel="noopener noreferrer">dr</a>
+                    <a href="#contact" class="social-link social-pinterest" aria-label="Pinterest" rel="noopener noreferrer">p</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero section-padding">
+            <div class="container hero-container">
+                <h1 class="hero-title">WE'RE KEEPSAKE, A DIGITAL & BRANDING AGENCY</h1>
+                <p class="hero-subtitle">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+                <div class="hero-actions">
+                    <a href="#works" class="btn btn-primary">SEE OUR WORKS</a>
+                    <a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section id="works" class="works section-padding">
+            <div class="container">
+                <!-- Radio inputs are siblings of .section-header and .works-grid for :checked ~ CSS. -->
+                <input type="radio" name="filter" id="f-all" class="visually-hidden" checked>
+                <input type="radio" name="filter" id="f-branding" class="visually-hidden">
+                <input type="radio" name="filter" id="f-identity" class="visually-hidden">
+                <input type="radio" name="filter" id="f-print" class="visually-hidden">
+                <input type="radio" name="filter" id="f-web" class="visually-hidden">
+                <input type="radio" name="filter" id="f-motion" class="visually-hidden">
+                <div class="section-header">
+                    <h2 class="section-title">OUR AWESOME WORKS</h2>
+
+                    <div class="filter-chips">
+                        <label for="f-all" class="chip">ALL</label>
+                        <label for="f-branding" class="chip">BRANDING</label>
+                        <label for="f-identity" class="chip">IDENTITY</label>
+                        <label for="f-print" class="chip">PRINT</label>
+                        <label for="f-web" class="chip">WEB</label>
+                        <label for="f-motion" class="chip">MOTION</label>
+                    </div>
+                </div>
+
+                <div class="works-grid">
+                    <article class="card" data-category="branding">
+                        <img src="images/mockup-tag.webp" alt="MOCK-UP TAG" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>MOCK-UP TAG</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Branding</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="print">
+                        <img src="images/piecepaper.webp" alt="PIECEPAPER" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>PIECEPAPER</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Print</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="identity">
+                        <img src="images/vinyl.webp" alt="VINYL" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>VINYL</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Identity</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="identity">
+                        <img src="images/vol16.webp" alt="VOL. 16" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>VOL. 16</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Identity</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="web">
+                        <img src="images/profile-ui.webp" alt="PROFILE UI" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>PROFILE UI</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Web</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="print">
+                        <img src="images/cards.webp" alt="CARDS" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>CARDS</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Print</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="branding">
+                        <img src="images/wallst.webp" alt="WALLST." loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>WALLST.</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Branding</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="identity">
+                        <img src="images/john-doe.webp" alt="JOHN DOE" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>JOHN DOE</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Identity</span>
+                        </div>
+                    </article>
+                    <article class="card" data-category="branding">
+                        <img src="images/seal-fabric.webp" alt="SEAL FABRIC" loading="lazy" width="350" height="276">
+                        <div class="card-overlay" tabindex="0" role="group" aria-label="Project information">
+                            <span class="btn-teal-plus" aria-hidden="true">+</span>
+                            <h3>SEAL FABRIC</h3>
+                            <div class="accent-line"></div>
+                            <span class="card-category">Branding</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="center-actions">
+                    <button class="btn btn-secondary btn-full-mobile">LOAD MORE WORKS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta section-padding text-center">
+            <div class="container">
+                <h2 class="cta-title">WOULD YOU LOVE TO WORK WITH US?</h2>
+                <a href="#contact" class="btn btn-primary cta-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 7 9-7"/></svg> CONTACT US
+                </a>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="about" class="services section-padding">
+            <div class="container">
+                <h2 class="section-title">WHAT DO WE DO</h2>
+                <p class="section-desc">We are a small team of designers and makers who help brands look their best online and offline.</p>
+                
+                <div class="services-grid">
+                    <article class="service-item">
+                        <div class="service-icon"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><rect x="8" y="12" width="32" height="24" rx="2" fill="#A9B7BA"/><rect x="12" y="16" width="24" height="16" fill="#E6ECEE"/><rect x="15" y="19" width="18" height="10" fill="#80CBA4"/><rect x="15" y="19" width="18" height="3" fill="#E2E6E6"/></svg></div>
+                        <h3 class="service-title">WEB DESIGN</h3>
+                        <p>Responsive sites and product interfaces that look sharp on every screen.</p>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><rect x="7" y="11" width="34" height="26" rx="3" fill="#607B88"/><rect x="11" y="15" width="26" height="18" rx="1" fill="#B5D3DE"/></svg></div>
+                        <h3 class="service-title">MOTION VIDEO</h3>
+                        <p>Explainers, logo animations and social clips that bring brands to life.</p>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><rect x="14" y="7" width="20" height="16" rx="1" fill="#E4E4E1"/><rect x="9" y="20" width="30" height="18" rx="2" fill="#9BA5A7"/><rect x="14" y="28" width="20" height="12" fill="#EAC75D"/><circle cx="34" cy="24" r="1.4" fill="#E1F0EA"/></svg></div>
+                        <h3 class="service-title">PRINT DESIGN</h3>
+                        <p>Posters, packaging and stationery prepared to be printed right.</p>
+                    </article>
+                    <article class="service-item">
+                        <div class="service-icon"><svg viewBox="0 0 48 48" width="34" height="34" aria-hidden="true"><path d="M24 39 10 25C3 18 9 8 17 10c3 0 5 2 7 5 2-3 4-5 7-5 8-2 14 8 7 15Z" fill="#F95858"/></svg></div>
+                        <h3 class="service-title">ILLUSTRATION</h3>
+                        <p>Custom illustrations and icon sets in a style that is yours alone.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats section-padding">
+            <div class="container stats-container">
+                <div class="stat-item">
+                    <span class="stat-num">120+</span>
+                    <span class="stat-label">PROJECTS DONE</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">8</span>
+                    <span class="stat-label">YEARS IN CRAFT</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">64</span>
+                    <span class="stat-label">HAPPY CLIENTS</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">15</span>
+                    <span class="stat-label">DESIGN AWARDS</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS & TESTIMONIALS -->
+        <section class="clients-testimonials section-padding">
+            <div class="container">
+                <h2 class="section-title">CLIENTS & KIND WORDS</h2>
+                <p class="section-desc">Some of the teams that trusted us with their brands.</p>
+                
+                <div class="clients-grid">
+                    <img src="images/logo-nordly.webp" width="120" height="40" alt="Nordly logo" loading="lazy">
+                    <img src="images/logo-halcyon.webp" width="120" height="40" alt="Halcyon logo" loading="lazy">
+                    <img src="images/logo-arco.webp" width="120" height="40" alt="ARCO logo" loading="lazy">
+                    <img src="images/logo-pinewood.webp" width="120" height="40" alt="pinewood logo" loading="lazy">
+                    <img src="images/logo-vela.webp" width="120" height="40" alt="VELA logo" loading="lazy">
+                    <img src="images/logo-ostra.webp" width="120" height="40" alt="ostra logo" loading="lazy">
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote-icon">“</div>
+                    <p class="testimonial-text">Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</p>
+                    <div class="author-block">
+                        <div class="author-avatar">OM</div>
+                        <div class="author-info">
+                            <strong>OLENA MARCHENKO</strong>
+                            <span>Marketing Lead, Nordly</span>
+                        </div>
+                        <div class="slider-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+<!-- JOURNAL -->
+<section id="journal" class="journal section-padding">
+    <div class="container">
+        <h2 class="section-title">FROM THE JOURNAL</h2>
+        <p class="section-desc">Notes on process, case studies and things that inspire us.</p>
+
+        <div class="journal-grid">
+            <article class="journal-post">
+                <img src="images/journal-1.webp" alt="Abstract journal illustration 1" class="post-img" width="150" height="150" loading="lazy">
+                <div class="post-content">
+                    <div class="post-meta">OCT 13, 2026 / IDENTITY</div>
+                    <h3 class="post-title">SOLLICITUDIN TORTOR INCEPTOS</h3>
+                    <p class="post-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <a href="#" class="post-link">READ MORE &gt;</a>
+                </div>
+            </article>
+            <article class="journal-post">
+                <img src="images/journal-2.webp" alt="Abstract journal illustration 2" class="post-img" width="150" height="150" loading="lazy">
+                <div class="post-content">
+                    <div class="post-meta">OCT 23, 2026 / BRANDING</div>
+                    <h3 class="post-title">AMET INCEPTOS FRINGILLA FUSCE</h3>
+                    <p class="post-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <a href="#" class="post-link">READ MORE &gt;</a>
+                </div>
+            </article>
+            <article class="journal-post">
+                <img src="images/journal-3.webp" alt="Abstract journal illustration 3" class="post-img" width="150" height="150" loading="lazy">
+                <div class="post-content">
+                    <div class="post-meta">SEP 19, 2026 / IDENTITY</div>
+                    <h3 class="post-title">CURSUS MALESUADA JUSTO</h3>
+                    <p class="post-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <a href="#" class="post-link">READ MORE &gt;</a>
+                </div>
+            </article>
+            <article class="journal-post">
+                <img src="images/journal-4.webp" alt="Abstract journal illustration 4" class="post-img" width="150" height="150" loading="lazy">
+                <div class="post-content">
+                    <div class="post-meta">SEP 27, 2026 / BRANDING</div>
+                    <h3 class="post-title">ORNARE CURSUS BIBENDUM PURUS</h3>
+                    <p class="post-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <a href="#" class="post-link">READ MORE &gt;</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h4>STUDIO</h4>
+                        <ul>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#works">Our works</a></li>
+                            <li><a href="#journal">Journal</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="link-column">
+                        <h4>SERVICES</h4>
+                        <ul>
+                            <li><a href="#">Web design</a></li>
+                            <li><a href="#">Motion video</a></li>
+                            <li><a href="#">Print design</a></li>
+                            <li><a href="#">Illustration</a></li>
+                            <li><a href="#">Brand strategy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>NEWSLETTER</h4>
+                    <p>Fresh case studies and design notes, once a month.</p>
+                    <form class="newsletter-form" action="#newsletter-success" method="get">
+                        <label for="email" class="visually-hidden">Your email address</label>
+                        <div class="input-group">
+                            <input type="email" id="email" placeholder="Your email address" required aria-describedby="email-error">
+                            <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+                        </div>
+                        <span id="email-error" class="error-text" role="alert">Please enter a valid email address.</span>
+                        
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">I agree to the privacy policy</label>
+                        </div>
+                    </form>
+                    <p id="newsletter-success" class="success-text" role="status">Thank you! Your subscription request has been accepted (demo).</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Keepsake. All rights reserved.</p>
+                <div class="socials">
+                    <a href="#" class="social-link social-rss" aria-label="RSS">rss</a>
+                    <a href="#" class="social-link social-facebook" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link social-twitter" aria-label="Twitter">tw</a>
+                    <a href="#" class="social-link social-dribbble" aria-label="Dribbble">dr</a>
+                    <a href="#" class="social-link social-pinterest" aria-label="Pinterest">p</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M12 4l-8 8h6v8h4v-8h6z"/></svg>
+    </a>
+</body>
+</html>
